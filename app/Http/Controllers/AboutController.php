@@ -8,6 +8,10 @@ use Illuminate\Support\Carbon;
 
 class AboutController extends Controller
 {
+    public function homeabout(){
+        
+    }
+
     public function index() {
         $homeabouts = HomeAbout::latest()->get();
         return view('admin.about.index', compact('homeabouts'));
@@ -50,7 +54,7 @@ class AboutController extends Controller
     }
 
     public function deleteabout($id) {
-        HomeAbout::find($id)->delete(); 
+        HomeAbout::find($id)->delete();
         return redirect()->route('home.about')->with('message', 'About delete successfully');
     }
 }

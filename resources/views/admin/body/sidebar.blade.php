@@ -29,9 +29,6 @@
 
         <!-- sidebar menu -->
         <ul class="nav sidebar-inner" id="sidebar-menu">
-          
-
-          
             <li  class="has-sub active expand" >
               <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#dashboard"
                 aria-expanded="false" aria-controls="dashboard">
@@ -41,42 +38,39 @@
               <ul  class="collapse show"  id="dashboard"
                 data-parent="#sidebar-menu">
                 <div class="sub-menu">
-                  
-                  
-                    
-                      <li  class="active" >
-                        <a class="sidenav-item-link" href="{{route('home.slider')}}">
-                          <span class="nav-text">Slider</span>
-                          
-                        </a>
-                      </li>
-                      <li  class="active" >
-                        <a class="sidenav-item-link" href="{{route('home.about')}}">
-                          <span class="nav-text">About</span>
-                          
-                        </a>
-                      </li>
-                      <li  class="active" >
-                        <a class="sidenav-item-link" href="{{route('multi.image')}}">
-                          <span class="nav-text">portfolio</span>
-                          
-                        </a>
-                      </li>
-                      <li  class="active" >
-                      <a class="sidenav-item-link" href="{{route('all.brand')}}">
-                          <span class="nav-text">Brand</span>
-                          
-                        </a>
-                      </li>
 
-                      <li  class="active" >
-                        <a class="sidenav-item-link" href="{{route('service.view')}}">
-                          <span class="nav-text">Services</span>
-                          
-                        </a>
-                      </li>
+                    <li  class="active" >
+                    <a class="sidenav-item-link" href="{{route('home.slider')}}">
+                        <span class="nav-text">Slider</span>
 
-                  
+                    </a>
+                    </li>
+                    <li  class="active" >
+                    <a class="sidenav-item-link" href="{{route('home.about')}}">
+                        <span class="nav-text">About</span>
+
+                    </a>
+                    </li>
+                    <li  class="active" >
+                    <a class="sidenav-item-link" href="{{route('multi.image')}}">
+                        <span class="nav-text">portfolio</span>
+
+                    </a>
+                    </li>
+                    <li  class="active" >
+                    <a class="sidenav-item-link" href="{{route('all.brand')}}">
+                        <span class="nav-text">Brand</span>
+
+                    </a>
+                    </li>
+
+                    <li  class="active" >
+                    <a class="sidenav-item-link" href="{{route('service.view')}}">
+                        <span class="nav-text">Services</span>
+
+                    </a>
+                    </li>
+
                 </div>
               </ul>
             </li>
@@ -91,29 +85,46 @@
               <ul  class="collapse show"  id="contact"
                 data-parent="#sidebar-menu">
                 <div class="sub-menu">
-                  
-                  
-                    
-                      <li  class="active" >
-                        <a class="sidenav-item-link" href="{{route('contact.admin')}}">
-                          <span class="nav-text">Contact Profile</span>
-                          
-                        </a>
-                      </li>
 
-                      <li  class="active" >
-                        <a class="sidenav-item-link" href="{{route('contact.message')}}">
-                          <span class="nav-text">Contact message</span>
-                          
-                        </a>
-                      </li>
-                      
+                    <li  class="active" >
+                    <a class="sidenav-item-link" href="{{route('contact.admin')}}">
+                        <span class="nav-text">Contact Profile</span>
 
-                  
+                    </a>
+                    </li>
+
+                    <li  class="active" >
+                    <a class="sidenav-item-link" href="{{route('contact.message')}}">
+                        <span class="nav-text">Contact message</span>
+
+                    </a>
+                    </li>
+
                 </div>
               </ul>
             </li>
-            
+
+            <li  class="has-sub active expand" >
+              <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#about"
+                aria-expanded="false" aria-controls="about">
+                <i class="mdi mdi-view-dashboard-outline"></i>
+                <span class="nav-text">About Us</span> <b class="caret"></b>
+              </a>
+              <ul  class="collapse show"  id="about"
+                data-parent="#sidebar-menu">
+                <div class="sub-menu">
+
+                    <li  class="active" >
+                    <a class="sidenav-item-link" href="{{route('about_us.index')}}">
+                        <span class="nav-text">Member List</span>
+
+                    </a>
+                    </li>
+
+                </div>
+              </ul>
+            </li>
+
             {{-- Services --}}
             <li  class="has-sub active expand" >
               <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#Sociallinks"
@@ -124,31 +135,17 @@
               <ul  class="collapse show"  id="Sociallinks"
                 data-parent="#sidebar-menu">
                 <div class="sub-menu">
-                  
-                  
-                    
-                      <li  class="active" >
+
+                    <li  class="active" >
                         <a class="sidenav-item-link" href="{{route('social.view')}}">
-                          <span class="nav-text">Sociallinks</span>
-                          
+                        <span class="nav-text">Sociallinks</span>
+
                         </a>
-                      </li>
+                    </li>
 
-                      
-                      
-
-                  
                 </div>
               </ul>
             </li>
-
-          
-
-          
-            
-          
-
-          
         </ul>
 
       </div>

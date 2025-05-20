@@ -47,7 +47,7 @@
           {{-- <li><a href="{{route('portfolio')}}">Portfolio</a></li> --}}
           {{-- <li><a href="pricing.html">Pricing</a></li> --}}
           {{-- <li><a href="blog.html">Blog</a></li> --}}
-          <li><a href="{{route('contact')}}">About Us</a></li>
+          <li><a href="{{route('about_us')}}">About Us</a></li>
 
           <li><a href="{{route('contact')}}">Contact</a></li>
 

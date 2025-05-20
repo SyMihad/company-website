@@ -5,6 +5,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BrandController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\AboutUsController;
 use App\Http\Controllers\MultiimageController;
 use App\Models\Multipic;
 use App\Http\Controllers\PortfolioController;
@@ -142,6 +143,18 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
 
     Route::post('/admin/social/update/{id}', [SocialController::class, 'undate'])->name('social.update');
 
+    //About Us Admin
+    Route::resource('admin/about', AboutUsController::class)
+        ->except(['show'])
+        ->names([
+            'index' => 'about_us.index',
+            'create' => 'about_us.create',
+            'store' => 'about_us.store',
+            'edit' => 'about_us.edit',
+            'update' => 'about_us.update',
+            'destroy' => 'about_us.destroy',
+        ]);
+
 
 
 });
@@ -154,6 +167,8 @@ Route::get('user/logout', [AdminController::class, 'logout'])->name('user.logout
 Route::get('/portfolio', [PortfolioController::class, 'index'])->name('portfolio');
 
 Route::get('/contact', [ContactController::class, 'homeindex'])->name('contact');
+
+Route::get('/about_us', [AboutUsController::class, 'home_about_us'])->name('about_us');
 
  //home coantcat send
 
