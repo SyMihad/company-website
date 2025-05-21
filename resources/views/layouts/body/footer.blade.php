@@ -7,30 +7,31 @@
           <div class="col-lg-3 col-md-6 footer-contact">
             <h3>Company</h3>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              House: 355/B <br>
+              Road: 5, Block: I<br>
+              Bashundhara Residential Area , Dhaka 1229 <br><br>
+              <strong>Phone:</strong> 01911305090 <br>
+              <strong>Email:</strong> groupnongor@gmail.com <br>
             </p>
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{ route('main.home') }}">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('about_us')}}">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('contact')}}">Contract us</a></li>
+              {{-- <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li> --}}
+              {{-- <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li> --}}
+              {{-- <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li> --}}
             </ul>
           </div>
-          
+
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Agro</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Real Estate</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('real-estate')}}">Real Estate</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Restaurant</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Shop</a></li>
               {{-- <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li> --}}
