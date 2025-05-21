@@ -11,6 +11,7 @@ use App\Models\Multipic;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ChangePassController;
+use App\Http\Controllers\RealEstateController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\SocialController;
 /*
@@ -155,7 +156,17 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
             'destroy' => 'about_us.destroy',
         ]);
 
-
+    //About Us Admin
+    Route::resource('admin/real_estate', RealEstateController::class)
+        ->except(['show'])
+        ->names([
+            'index' => 'real_estate.index',
+            'create' => 'real_estate.create',
+            'store' => 'real_estate.store',
+            'edit' => 'real_estate.edit',
+            'update' => 'real_estate.update',
+            'destroy' => 'real_estate.destroy',
+        ]);
 
 });
 
@@ -169,6 +180,11 @@ Route::get('/portfolio', [PortfolioController::class, 'index'])->name('portfolio
 Route::get('/contact', [ContactController::class, 'homeindex'])->name('contact');
 
 Route::get('/about_us', [AboutUsController::class, 'home_about_us'])->name('about_us');
+
+Route::get('/real-estate', [RealEstateController::class, 'home_building_list'])->name('real-estate');
+
+Route::get('/real-estate/building/{id}', [RealEstateController::class, 'show'])->name('real.estate.show');
+
 
  //home coantcat send
 

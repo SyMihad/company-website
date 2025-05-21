@@ -37,7 +37,7 @@
           <li class="drop-down"><a href="">Services</a>
             <ul>
               <li><a href="about.html">Agro</a></li>
-              <li><a href="team.html">Real Eastate</a></li>
+              <li><a href="{{route('real-estate')}}">Real Eastate</a></li>
               <li><a href="testimonials.html">Shop</a></li>
               <li><a href="testimonials.html">Restaurant</a></li>
             </ul>

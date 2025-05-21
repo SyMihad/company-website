@@ -9,7 +9,7 @@
         <h2>About Us</h2>
         <ol>
           <li><a href="{{route('main.home')}}">Home</a></li>
-          <li>About Us</li>
+          <li><a href="{{route('about_us')}}">About Us</a></li>
         </ol>
       </div>
 

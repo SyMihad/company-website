@@ -51,22 +51,44 @@
 
                     </a>
                     </li>
-                    <li  class="active" >
+                    {{-- <li  class="active" >
                     <a class="sidenav-item-link" href="{{route('multi.image')}}">
                         <span class="nav-text">portfolio</span>
 
                     </a>
-                    </li>
-                    <li  class="active" >
+                    </li> --}}
+                    {{-- <li  class="active" >
                     <a class="sidenav-item-link" href="{{route('all.brand')}}">
                         <span class="nav-text">Brand</span>
 
                     </a>
-                    </li>
+                    </li> --}}
 
                     <li  class="active" >
                     <a class="sidenav-item-link" href="{{route('service.view')}}">
                         <span class="nav-text">Services</span>
+
+                    </a>
+                    </li>
+
+                </div>
+              </ul>
+            </li>
+
+
+            <li  class="has-sub active expand" >
+              <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#real_estate"
+                aria-expanded="false" aria-controls="real_estate">
+                <i class="mdi mdi-view-dashboard-outline"></i>
+                <span class="nav-text">Real Estate</span> <b class="caret"></b>
+              </a>
+              <ul  class="collapse show"  id="real_estate"
+                data-parent="#sidebar-menu">
+                <div class="sub-menu">
+
+                    <li  class="active" >
+                    <a class="sidenav-item-link" href="{{route('real_estate.index')}}">
+                        <span class="nav-text">Buildings</span>
 
                     </a>
                     </li>
