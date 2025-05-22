@@ -97,6 +97,27 @@
               </ul>
             </li>
 
+            <li  class="has-sub active expand" >
+              <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#agro"
+                aria-expanded="false" aria-controls="agro">
+                <i class="mdi mdi-view-dashboard-outline"></i>
+                <span class="nav-text">Agro Sector</span> <b class="caret"></b>
+              </a>
+              <ul  class="collapse show"  id="agro"
+                data-parent="#sidebar-menu">
+                <div class="sub-menu">
+
+                    <li  class="active" >
+                    <a class="sidenav-item-link" href="{{route('agro.index')}}">
+                        <span class="nav-text">Agro Page</span>
+
+                    </a>
+                    </li>
+
+                </div>
+              </ul>
+            </li>
+
 
             <li  class="has-sub active expand" >
               <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#contact"

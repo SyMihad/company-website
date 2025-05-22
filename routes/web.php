@@ -6,6 +6,7 @@ use App\Http\Controllers\BrandController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AboutUsController;
+use App\Http\Controllers\AgroController;
 use App\Http\Controllers\MultiimageController;
 use App\Models\Multipic;
 use App\Http\Controllers\PortfolioController;
@@ -125,6 +126,11 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
 
     Route::post('/user/profile/update', [ChangePassController::class, 'saveprofile'])->name('update.user.profile');
 
+    //Agro
+
+    Route::get('/agro-admin', [AgroController::class, 'index'])->name('agro.index');
+    Route::post('/agro/update/{id}', [AgroController::class, 'update'])->name('agro.update');
+
 
 
     //services
@@ -184,6 +190,10 @@ Route::get('/about_us', [AboutUsController::class, 'home_about_us'])->name('abou
 Route::get('/real-estate', [RealEstateController::class, 'home_building_list'])->name('real-estate');
 
 Route::get('/real-estate/building/{id}', [RealEstateController::class, 'show'])->name('real.estate.show');
+
+Route::get('/agro', [AgroController::class, 'homeagro'])->name('agro.home');
+
+Route::post('/summernote/upload', [App\Http\Controllers\SummernoteController::class, 'upload'])->name('summernote.upload');
 
 
  //home coantcat send

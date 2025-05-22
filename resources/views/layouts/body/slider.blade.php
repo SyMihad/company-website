@@ -1,6 +1,7 @@
+
 @php
 $sliders = DB::table('sliders')->get();
-    
+
 @endphp
 
 
@@ -22,7 +23,7 @@ $sliders = DB::table('sliders')->get();
         </div>
         @endforeach
         <!-- Slide 1 -->
-       
+
 
 
       </div>

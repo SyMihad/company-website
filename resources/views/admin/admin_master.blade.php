@@ -26,7 +26,9 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" />
 
   <!-- FAVICON -->
-  <link href="{{asset('backend/assets/img/favicon.png')}}" rel="shortcut icon" />
+  {{-- <link href="{{asset('backend/assets/img/favicon.png')}}" rel="shortcut icon" /> --}}
+   <link href="{{ asset('frontend/assets/img/android-chrome-512x512.png') }}" rel="icon">
+    <link href="{{ asset('frontend/assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
 
   <!--
     HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
@@ -37,6 +39,10 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
   <script src="{{asset('backend/assets/plugins/nprogress/nprogress.js')}}"></script>
+
+  <!-- Summernote CSS -->
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.20/dist/summernote.min.css" rel="stylesheet">
+
 </head>
 
 
@@ -197,6 +203,14 @@
 <script src="{{asset('backend/assets/js/map.js')}}"></script>
 {{-- <script src="{{asset('backend/assets/js/custom.js')}}"></script> --}}
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+<!-- jQuery (required for Summernote) -->
+{{-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> --}}
+
+<!-- Summernote JS -->
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.20/dist/summernote.min.js"></script>
+@stack('scripts')
+
 
 <script>
 @if(Session::has('message'))

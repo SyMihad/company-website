@@ -5,13 +5,29 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Company Bootstrap Template - Index</title>
+  <title>Nongor Group</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{{asset('frontend/assets/img/favicon.png')}}" rel="icon">
-  <link href="{{asset('frontend/assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+    <link href="{{ asset('frontend/assets/img/android-chrome-512x512.png') }}" rel="icon">
+    <link href="{{ asset('frontend/assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+  {{-- <link href="{{asset('frontend/assets/img/favicon.png')}}" rel="icon">
+  <link href="{{asset('frontend/assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon"> --}}
+  <!-- inside <head> -->
+  {{-- <link rel="icon" href="{!! asset('frontend/assets/img/favicon.ico') !!}"> --}}
+{{-- <link rel="shortcut icon" href="{{ asset('frontend/assets/img/favicon.png') }}"> --}}
+
+    {{-- <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('frontend/assets/img/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('frontend/assets/img/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('frontend/assets/img/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('frontend/assets/img/site.webmanifest') }}"> --}}
+
+{{-- <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"> --}}
+
+
+
+
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -26,6 +42,9 @@
   <link href="{{asset('frontend/assets/vendor/aos/aos.css')}}" rel="stylesheet">
   <link href="{{asset('frontend/assets/vendor/remixicon/remixicon.css')}}" rel="stylesheet">
 
+  <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.20/dist/summernote.min.css" rel="stylesheet">
+
+
   <!-- Template Main CSS File -->
   <link href="{{asset('frontend/assets/css/style.css')}}" rel="stylesheet">
 
@@ -35,17 +54,20 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+
+
 </head>
 
 <body>
 
- 
+
  <!-- ======= Header ======= -->
   @include('layouts.body.header')
  <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
- 
+
  <!-- End Hero -->
 
   <main id="main">
@@ -75,6 +97,13 @@
   <!-- Template Main JS File -->
   <script src="{{asset('frontend/assets/js/main.js')}}"></script>
 
+  <!-- jQuery (required for Summernote) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Summernote JS -->
+  <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.20/dist/summernote.min.js"></script>
+
+@stack('scripts')
 </body>
 
 </html>

@@ -1,8 +1,10 @@
 @extends('layouts.master_home')
-@include('layouts.body.slider')
+
 @section('home_content')
 
+{{-- @include('layouts.body.slider') --}}
 
+<br><br>
 <!-- ======= About Us Section ======= -->
 <section id="about-us" class="about-us">
     <div class="container" data-aos="fade-up">
@@ -18,7 +20,7 @@
         </div>
         <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
           <p>
-            {{$abouts->long_dis}}
+            {!! $abouts->long_dis !!}
           </p>
           <ul>
           <li><i class="ri-check-double-line"></i> {{$abouts->l1}}</li>
@@ -134,7 +136,7 @@
   </section><!-- End Services Section -->
 
   <!-- ======= Portfolio Section ======= -->
-  <section id="portfolio" class="portfolio">
+  {{-- <section id="portfolio" class="portfolio">
     <div class="container">
 
       <div class="section-title" data-aos="fade-up">
@@ -168,9 +170,9 @@
       </div>
 
     </div>
-  </section><!-- End Portfolio Section -->
+  </section><!-- End Portfolio Section --> --}}
 
-  <!-- ======= Our Clients Section ======= -->
+  {{-- <!-- ======= Our Clients Section ======= -->
   <section id="clients" class="clients">
     <div class="container" data-aos="fade-up">
 
@@ -194,7 +196,7 @@
       </div>
 
     </div>
-  </section><!-- End Our Clients Section -->
+  </section><!-- End Our Clients Section --> --}}
 
 
   @endsection

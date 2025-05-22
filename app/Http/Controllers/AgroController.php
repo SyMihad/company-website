@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\TeamMember;
+use App\Models\AgroPage;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
-class AboutUsController extends Controller
+class AgroController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,18 +13,16 @@ class AboutUsController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    public function home_about_us(){
-        $members = TeamMember::orderBy('priority')->get();
-        $abouts = DB::table('home_abouts')->first();
-        // dd($abouts);
-        return view('pages.about', compact('members', 'abouts'));
+    public function homeagro(){
+        $agro = AgroPage::latest()->first();
+        return view('pages.agro', compact('agro'));
     }
-
     public function index()
     {
-        $members = TeamMember::orderBy('priority')->get();
-        return view('admin.about_us.index', compact('members'));
-
+        $agro = AgroPage::latest()->first();
+        // dd($agro);
+        // return view('admin.agro.index', compact('agro'));
+        return view('admin.agro.index', compact('agro'));
     }
 
     /**
@@ -35,7 +32,7 @@ class AboutUsController extends Controller
      */
     public function create()
     {
-        return view('admin.about_us.create');
+        //
     }
 
     /**
@@ -46,24 +43,7 @@ class AboutUsController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'name' => 'required',
-            'designation' => 'required',
-            'priority' => 'required|integer',
-            'photo' => 'required|image|max:2048',
-        ]);
-
-        $filename = time() . '.' . $request->photo->extension();
-        $request->photo->move(public_path('image/team'), $filename);
-
-        TeamMember::create([
-            'name' => $request->name,
-            'designation' => $request->designation,
-            'priority' => $request->priority,
-            'photo' => $filename,
-        ]);
-
-        return back()->with('success', 'Team member added');
+        //
     }
 
     /**
@@ -97,7 +77,11 @@ class AboutUsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $agro = AgroPage::find($id);
+        $agro->update([
+            'description' => $request->description,
+        ]);
+        return redirect()->route('agro.index')->with('message', 'Agro updated successfully');
     }
 
     /**
