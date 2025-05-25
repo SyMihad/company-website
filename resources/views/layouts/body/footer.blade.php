@@ -30,10 +30,10 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Agro</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{ route('agro.home') }}">Agro</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="{{route('real-estate')}}">Real Estate</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Restaurant</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Shop</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href=" {{ route('coming-soon') }} ">Restaurant</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href=" {{ route('coming-soon') }} ">Shop</a></li>
               {{-- <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li> --}}
             </ul>
           </div>

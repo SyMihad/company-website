@@ -4,6 +4,33 @@
 
 {{-- @include('layouts.body.slider') --}}
 
+    <div id="preloader">
+        <div class="preloader-content">
+            <img src="{{ asset('frontend/assets/img/NONGOR-LOGO-ENG.png') }}"  alt="Loading..." />
+        </div>
+    </div>
+
+    <style>
+    #preloader {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 9999;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .preloader-content img {
+        width: 700px;  /* or any size you want */
+        height: auto;
+        }
+
+    </style>
+
 <br><br>
 <!-- ======= About Us Section ======= -->
 <section id="about-us" class="about-us">
@@ -135,68 +162,19 @@
     </div>
   </section><!-- End Services Section -->
 
-  <!-- ======= Portfolio Section ======= -->
-  {{-- <section id="portfolio" class="portfolio">
-    <div class="container">
-
-      <div class="section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-      </div>
-
-      <div class="row" data-aos="fade-up">
-        <div class="col-lg-12 d-flex justify-content-center">
-
-        </div>
-      </div>
-
-      <div class="row portfolio-container" data-aos="fade-up">
-
-        @foreach ($images as $img)
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <img src="{{$img->image}}" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>PORTFOLIO</h4>
-
-            <a href="{{$img->image}}" data-gall="portfolioGallery" class="venobox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" class="details-link" title="More Details"></i></a>
-          </div>
-        </div>
-        @endforeach
-
-
-
-        </div>
-
-      </div>
-
-    </div>
-  </section><!-- End Portfolio Section --> --}}
-
-  {{-- <!-- ======= Our Clients Section ======= -->
-  <section id="clients" class="clients">
-    <div class="container" data-aos="fade-up">
-
-      <div class="section-title">
-        <h2>Brands</h2>
-      </div>
-
-      <div class="row no-gutters clients-wrap clearfix" data-aos="fade-up">
-
-        @foreach ($brands as $brand)
-        <div class="col-lg-3 col-md-4 col-6">
-          <div class="client-logo">
-          <img src="{{$brand->brand_image}}" class="img-fluid" alt="{{$brand->brand_name}}">
-          </div>
-        </div>
-        @endforeach
-
-
-
-
-      </div>
-
-    </div>
-  </section><!-- End Our Clients Section --> --}}
-
 
   @endsection
+
+@push('scripts')
+<script>
+    window.addEventListener('load', function () {
+        setTimeout(() => {
+            const preloader = document.getElementById('preloader');
+            if (preloader) {
+                preloader.style.display = 'none';
+            }
+        }, 800); // 1 second delay
+    });
+</script>
+@endpush
+

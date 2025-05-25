@@ -39,8 +39,8 @@
             <ul>
               <li><a href=" {{ route('agro.home') }} ">Agro</a></li>
               <li><a href="{{route('real-estate')}}">Real Eastate</a></li>
-              <li><a href="testimonials.html">Shop</a></li>
-              <li><a href="testimonials.html">Restaurant</a></li>
+              <li><a href="{{ route('coming-soon') }}">Shop</a></li>
+              <li><a href="{{ route('coming-soon') }}">Restaurant</a></li>
             </ul>
           </li>
 

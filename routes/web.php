@@ -200,6 +200,11 @@ Route::post('/summernote/upload', [App\Http\Controllers\SummernoteController::cl
 
  Route::post('/contact/form', [ContactController::class, 'formcontact'])->name('contact.form');
 
+ //Coming sooon page
+    Route::get('/coming-soon', function () {
+        return view('pages/coming_soon');
+    })->name('coming-soon');
+
 
 
 

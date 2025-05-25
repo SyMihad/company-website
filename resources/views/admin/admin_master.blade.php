@@ -43,6 +43,9 @@
   <!-- Summernote CSS -->
 <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.20/dist/summernote.min.css" rel="stylesheet">
 
+<!-- Cropper.js CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css" rel="stylesheet">
+
 </head>
 
 
@@ -184,7 +187,7 @@
 
 {{-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCn8TFXGg17HAUcNpkwtxxyT9Io9B_NcM" defer></script> --}}
 <script src="{{asset('backend/assets/plugins/jquery/jquery.min.js')}}"></script>
-<script src="{{asset('backend/assets/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+{{-- <script src="{{asset('backend/assets/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script> --}}
 <script src="{{asset('backend/assets/plugins/toaster/toastr.min.js')}}"></script>
 <script src="{{asset('backend/assets/plugins/slimscrollbar/jquery.slimscroll.min.js')}}"></script>
 <script src="{{asset('backend/assets/plugins/charts/Chart.min.js')}}"></script>
@@ -209,7 +212,14 @@
 
 <!-- Summernote JS -->
 <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.20/dist/summernote.min.js"></script>
-@stack('scripts')
+
+<!-- Cropper.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+
+<!-- Bootstrap JS (if not already loaded properly) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+@yield('scripts')
 
 
 <script>
@@ -234,6 +244,7 @@ switch(type) {
 }
 @endif
 </script>
+
 
 
   </body>
