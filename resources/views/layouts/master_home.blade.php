@@ -5,9 +5,10 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Nongor Group</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
+  <title>Nongor Commercial Limited</title>
+
+  <meta name="description" content="Nongor Commercial Limited is a dynamic, multi-sector enterprise committed to excellence, innovation, and sustainable growth. With a strong presence across poultry, real estate, construction, and clothing, we are driven by a shared mission: to create value for our customers, communities, and stakeholders through high-quality products and services">
+    <meta name="keywords" content="Nongor Group, Nongor Kitchen, agro, Nongor Agro, clothing, restaurant, Ramgonj, Lakshmipur">
 
   <!-- Favicons -->
     <link href="{{ asset('public/frontend/assets/img/android-chrome-512x512.png') }}" rel="icon">

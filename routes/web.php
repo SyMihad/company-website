@@ -208,9 +208,13 @@ Route::post('/summernote/upload', [App\Http\Controllers\SummernoteController::cl
 });
 
  //Coming sooon page
-    Route::get('/coming-soon', function () {
-        return view('pages/coming_soon');
-    })->name('coming-soon');
+    Route::get('/coming-soon-clothing', function () {
+        return view('pages/coming_soon_clothing');
+    })->name('coming-soon-clothing');
+
+    Route::get('/coming-soon-restaurant', function () {
+        return view('pages/coming_soon_restaurant');
+    })->name('coming-soon-restaurant');
 
 
 
