@@ -116,8 +116,10 @@ class RealEstateController extends Controller
      * @param  \App\Models\RealEstate  $realEstate
      * @return \Illuminate\Http\Response
      */
-    public function destroy(RealEstate $realEstate)
+    public function destroy($id)
     {
-        //
+        $building = Building::findOrFail($id);
+        $building->delete();
+        return redirect()->route('real_estate.index')->with('success', 'Building deleted successfully!');
     }
 }

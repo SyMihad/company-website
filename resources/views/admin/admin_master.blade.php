@@ -12,23 +12,23 @@
   <link href="https://cdn.materialdesignicons.com/3.0.39/css/materialdesignicons.min.css" rel="stylesheet" />
 
   <!-- PLUGINS CSS STYLE -->
-  <link href="{{asset('backend/assets/plugins/toaster/toastr.min.css')}}" rel="stylesheet" />
-  <link href="{{asset('backend/assets/plugins/nprogress/nprogress.css')}}" rel="stylesheet" />
-  <link href="{{asset('backend/assets/plugins/flag-icons/css/flag-icon.min.css')}}" rel="stylesheet"/>
-  <link href="{{asset('backend/assets/plugins/jvectormap/jquery-jvectormap-2.0.3.css')}}" rel="stylesheet" />
-  <link href="{{asset('backend/assets/plugins/ladda/ladda.min.css')}}" rel="stylesheet" />
-  <link href="{{asset('backend/assets/plugins/select2/css/select2.min.css')}}" rel="stylesheet" />
-  <link href="{{asset('backend/assets/plugins/daterangepicker/daterangepicker.css')}}" rel="stylesheet" />
+  <link href="{{asset('public/backend/assets/plugins/toaster/toastr.min.css')}}" rel="stylesheet" />
+  <link href="{{asset('public/backend/assets/plugins/nprogress/nprogress.css')}}" rel="stylesheet" />
+  <link href="{{asset('public/backend/assets/plugins/flag-icons/css/flag-icon.min.css')}}" rel="stylesheet"/>
+  <link href="{{asset('public/backend/assets/plugins/jvectormap/jquery-jvectormap-2.0.3.css')}}" rel="stylesheet" />
+  <link href="{{asset('public/backend/assets/plugins/ladda/ladda.min.css')}}" rel="stylesheet" />
+  <link href="{{asset('public/backend/assets/plugins/select2/css/select2.min.css')}}" rel="stylesheet" />
+  <link href="{{asset('public/backend/assets/plugins/daterangepicker/daterangepicker.css')}}" rel="stylesheet" />
 
   <!-- SLEEK CSS -->
-  <link id="sleek-css" rel="stylesheet" href="{{asset('backend/assets/css/sleek.css')}}" />
+  <link id="sleek-css" rel="stylesheet" href="{{asset('public/backend/assets/css/sleek.css')}}" />
 
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" />
 
   <!-- FAVICON -->
   {{-- <link href="{{asset('backend/assets/img/favicon.png')}}" rel="shortcut icon" /> --}}
-   <link href="{{ asset('frontend/assets/img/android-chrome-512x512.png') }}" rel="icon">
-    <link href="{{ asset('frontend/assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+   <link href="{{ asset('public/frontend/assets/img/android-chrome-512x512.png') }}" rel="icon">
+    <link href="{{ asset('public/frontend/assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
 
   <!--
     HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
@@ -38,13 +38,13 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
-  <script src="{{asset('backend/assets/plugins/nprogress/nprogress.js')}}"></script>
+  <script src="{{asset('public/backend/assets/plugins/nprogress/nprogress.js')}}"></script>
 
   <!-- Summernote CSS -->
 <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.20/dist/summernote.min.css" rel="stylesheet">
 
 <!-- Cropper.js CSS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css" rel="stylesheet">
+{{-- <link href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css" rel="stylesheet"> --}}
 
 </head>
 
@@ -186,24 +186,24 @@
 
 
 {{-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCn8TFXGg17HAUcNpkwtxxyT9Io9B_NcM" defer></script> --}}
-<script src="{{asset('backend/assets/plugins/jquery/jquery.min.js')}}"></script>
-{{-- <script src="{{asset('backend/assets/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script> --}}
-<script src="{{asset('backend/assets/plugins/toaster/toastr.min.js')}}"></script>
-<script src="{{asset('backend/assets/plugins/slimscrollbar/jquery.slimscroll.min.js')}}"></script>
-<script src="{{asset('backend/assets/plugins/charts/Chart.min.js')}}"></script>
-<script src="{{asset('backend/assets/plugins/ladda/spin.min.js')}}"></script>
-<script src="{{asset('backend/assets/plugins/ladda/ladda.min.js')}}"></script>
-<script src="{{asset('backend/assets/plugins/jquery-mask-input/jquery.mask.min.js')}}"></script>
-<script src="{{asset('backend/assets/plugins/select2/js/select2.min.js')}}"></script>
-<script src="{{asset('backend/assets/plugins/jvectormap/jquery-jvectormap-2.0.3.min.js')}}"></script>
-<script src="{{asset('backend/assets/plugins/jvectormap/jquery-jvectormap-world-mill.js')}}"></script>
-<script src="{{asset('backend/assets/plugins/daterangepicker/moment.min.js')}}"></script>
-<script src="{{asset('backend/assets/plugins/daterangepicker/daterangepicker.js')}}"></script>
+<script src="{{asset('public/backend/assets/plugins/jquery/jquery.min.js')}}"></script>
+<script src="{{asset('public/backend/assets/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{asset('public/backend/assets/plugins/toaster/toastr.min.js')}}"></script>
+<script src="{{asset('public/backend/assets/plugins/slimscrollbar/jquery.slimscroll.min.js')}}"></script>
+<script src="{{asset('public/backend/assets/plugins/charts/Chart.min.js')}}"></script>
+<script src="{{asset('public/backend/assets/plugins/ladda/spin.min.js')}}"></script>
+<script src="{{asset('public/backend/assets/plugins/ladda/ladda.min.js')}}"></script>
+<script src="{{asset('public/backend/assets/plugins/jquery-mask-input/jquery.mask.min.js')}}"></script>
+<script src="{{asset('public/backend/assets/plugins/select2/js/select2.min.js')}}"></script>
+<script src="{{asset('public/backend/assets/plugins/jvectormap/jquery-jvectormap-2.0.3.min.js')}}"></script>
+<script src="{{asset('public/backend/assets/plugins/jvectormap/jquery-jvectormap-world-mill.js')}}"></script>
+<script src="{{asset('public/backend/assets/plugins/daterangepicker/moment.min.js')}}"></script>
+<script src="{{asset('public/backend/assets/plugins/daterangepicker/daterangepicker.js')}}"></script>
 {{-- <script src="{{asset('backend/assets/plugins/jekyll-search.min.js')}}"></script> --}}
-<script src="{{asset('backend/assets/js/sleek.js')}}"></script>
-<script src="{{asset('backend/assets/js/chart.js')}}"></script>
-<script src="{{asset('backend/assets/js/date-range.js')}}"></script>
-<script src="{{asset('backend/assets/js/map.js')}}"></script>
+<script src="{{asset('public/backend/assets/js/sleek.js')}}"></script>
+<script src="{{asset('public/backend/assets/js/chart.js')}}"></script>
+<script src="{{asset('public/backend/assets/js/date-range.js')}}"></script>
+<script src="{{asset('public/backend/assets/js/map.js')}}"></script>
 {{-- <script src="{{asset('backend/assets/js/custom.js')}}"></script> --}}
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
@@ -214,10 +214,10 @@
 <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.20/dist/summernote.min.js"></script>
 
 <!-- Cropper.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+{{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script> --}}
 
 <!-- Bootstrap JS (if not already loaded properly) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+{{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> --}}
 
 @yield('scripts')
 

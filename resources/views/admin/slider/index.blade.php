@@ -15,12 +15,12 @@
                                 {{Session::get('message')}}
                             </div>
                             @endif
-                            
-                        
+
+
                             <div class="card-header">All Sliders</div>
 
-             
-                    
+
+
                         <table class="table table-striped table-hover mx-auto w-auto">
                             <thead>
                               <tr>
@@ -37,7 +37,7 @@
                                 <th scope="row">{{$slider->id}}</th>
                                 <td>{{ $slider->title}}</td>
                                 <td>{{ Str::limit($slider->dec, 40)}}</td>
-                            <td><img src="{{asset($slider->image)}}" style="height:50px; width:70px;" ></td>
+                            <td><img src="{{asset('public/'.$slider->image)}}" style="height:50px; width:70px;" ></td>
                                     {{-- <td>
                                         @if($brd->created_at == NULL)
                                         <span class="text-danger"> <b>NO DATE SET </b></span>
@@ -46,24 +46,24 @@
                                         </td>
                                         @endif --}}
                                     <td>
-                                       
-                                        <a href="{{route('slider.edit',[$slider->id])}}" class="btn btn-info">Edit</a>    
-                                        <a href="{{route('slider.delete',[$slider->id])}}" onclick="return confirm('Are you sure to delete?')" class="btn btn-danger">Delete</a>  
-                                    </td>    
+
+                                        <a href="{{route('slider.edit',[$slider->id])}}" class="btn btn-info">Edit</a>
+                                        <a href="{{route('slider.delete',[$slider->id])}}" onclick="return confirm('Are you sure to delete?')" class="btn btn-danger">Delete</a>
+                                    </td>
                                   </tr>
                                 @endforeach
                             </tbody>
                           </table>
                     </div>
 
-                    
-               
-                  
+
+
+
                 </div>
             </div>
 
 
-            
+
         </div>
 
 

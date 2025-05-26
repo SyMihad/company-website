@@ -137,7 +137,7 @@
 
             <div class="text-center mb-4">
                 <img
-                    src="{{ asset('image/team/' . $chairman->photo) }}"
+                    src="{{ asset('public/image/team/' . $chairman->photo) }}"
                     class="rounded-circle img-thumbnail"
                     style="width: 150px; height: 150px; object-fit: cover;"
                     alt="{{ $chairman->name }}"
@@ -152,7 +152,7 @@
             @foreach($directors as $director)
                 <div class="col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                     <img
-                        src="{{ asset('image/team/' . $director->photo) }}"
+                        src="{{ asset('public/image/team/' . $director->photo) }}"
                         class="rounded-circle img-thumbnail"
                         style="width: 110px; height: 110px; object-fit: cover;"
                         alt="{{ $director->name }}"
@@ -167,7 +167,7 @@
 
             <div class="text-center mb-4">
                 <img
-                    src="{{ asset('image/team/' . $md->photo) }}"
+                    src="{{ asset('public/image/team/' . $md->photo) }}"
                     class="rounded-circle img-thumbnail"
                     style="width: 130px; height: 130px; object-fit: cover;"
                     alt="{{ $md->name }}"

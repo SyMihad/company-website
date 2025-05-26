@@ -39,7 +39,7 @@
     </div>
     @endsection
 
-@push('scripts')
+@section('scripts')
 <script>
     $(document).ready(function() {
         $('.summernote').summernote({
@@ -83,4 +83,4 @@
         });
     }
 </script>
-@endpush
+@endsection

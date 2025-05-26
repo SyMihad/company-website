@@ -2,12 +2,12 @@
 
 
 @section('admin')
-    
+
 
     <div class="py-12">
         <div class="container">
             <div class="row">
-               
+
 
             <div class="col-md-8">
                 <div class="card">
@@ -39,21 +39,21 @@
                                  aria-describedby="emailHelp"
                                 value="{{$sliders->image}}"
                                  >
-                            
+
                               </div>
 
                               <div class="form-group">
-                              <img src="{{asset($sliders->image)}}" style="width: 400px;height:200px;">
+                              <img src="{{asset('public/'.$sliders->image)}}" style="width: 400px;height:200px;">
                               </div>
-                            
+
                             <button type="submit" class="btn btn-primary">Update category</button>
                           </form>
                     </div>
-                    
+
                 </div>
-            </div>                    
+            </div>
 
             </div>
         </div>
     </div>
-    @endsection 
+    @endsection

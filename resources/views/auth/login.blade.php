@@ -13,18 +13,18 @@
   <link href="https://cdn.materialdesignicons.com/3.0.39/css/materialdesignicons.min.css" rel="stylesheet" />
 
   <!-- PLUGINS CSS STYLE -->
-  <link href="{{asset('backend/assets/plugins/toaster/toastr.min.css')}}" rel="stylesheet" />
-  <link href="{{asset('backend/assets/plugins/nprogress/nprogress.css')}}" rel="stylesheet" />
-  <link href="{{asset('backend/assets/plugins/flag-icons/css/flag-icon.min.css')}}" rel="stylesheet"/>
-  <link href="{{asset('backend/assets/plugins/jvectormap/jquery-jvectormap-2.0.3.css')}}" rel="stylesheet" />
-  <link href="{{asset('backend/assets/plugins/ladda/ladda.min.css')}}" rel="stylesheet" />
-  <link href="{{asset('backend/assets/plugins/select2/css/select2.min.css')}}" rel="stylesheet" />
-  <link href="{{asset('backend/assets/plugins/daterangepicker/daterangepicker.css')}}" rel="stylesheet" />
+  <link href="{{asset('public/backend/assets/plugins/toaster/toastr.min.css')}}" rel="stylesheet" />
+  <link href="{{asset('public/backend/assets/plugins/nprogress/nprogress.css')}}" rel="stylesheet" />
+  <link href="{{asset('public/backend/assets/plugins/flag-icons/css/flag-icon.min.css')}}" rel="stylesheet"/>
+  <link href="{{asset('public/backend/assets/plugins/jvectormap/jquery-jvectormap-2.0.3.css')}}" rel="stylesheet" />
+  <link href="{{asset('public/backend/assets/plugins/ladda/ladda.min.css')}}" rel="stylesheet" />
+  <link href="{{asset('public/backend/assets/plugins/select2/css/select2.min.css')}}" rel="stylesheet" />
+  <link href="{{asset('public/backend/assets/plugins/daterangepicker/daterangepicker.css')}}" rel="stylesheet" />
 
   <!-- SLEEK CSS -->
-  <link id="sleek-css" rel="stylesheet" href="{{asset('backend/assets/css/sleek.css')}}" />
+  <link id="sleek-css" rel="stylesheet" href="{{asset('public/backend/assets/css/sleek.css')}}" />
 
-  
+
 
   <!-- FAVICON -->
   <link href="assets/img/favicon.png" rel="shortcut icon" />
@@ -46,12 +46,12 @@
       <div class="row justify-content-center mt-5">
         <div class="col-xl-5 col-lg-6 col-md-10">
           <div class="card">
-            
+
             @if(Session::has('message'))
             <div class="alert alert-success">
                 {{Session::get('message')}}
             </div>
-          
+
             @endif
             <div class="card-header bg-primary">
               <div class="app-brand">
@@ -86,14 +86,14 @@
                           <input type="checkbox" name="remember" />
                           <div class="control-indicator"></div>
                         </label>
-                
+
                       </div>
                       <p><a class="text-blue" href="{{ route('password.request') }}">Forgot Your Password?</a></p>
                     </div>
                     <button type="submit" class="btn btn-lg btn-primary btn-block mb-4">Sign In</button>
-                    <p>Don't have an account yet ?
+                    {{-- <p>Don't have an account yet ?
                       <a class="text-blue" href="{{ route('register') }}">Sign Up</a>
-                    </p>
+                    </p> --}}
                   </div>
                 </div>
               </form>
@@ -101,11 +101,11 @@
           </div>
         </div>
       </div>
-      <div class="copyright pl-0">
+      {{-- <div class="copyright pl-0">
         <p class="text-center">&copy;design and develop by
           <a class="text-primary" href="" target="_blank">ROOT</a>.
         </p>
-      </div>
+      </div> --}}
     </div>
 </body>
 </html>

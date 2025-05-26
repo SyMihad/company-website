@@ -23,7 +23,7 @@
             @foreach($buildings as $building)
                 <div class="col-md-4 mb-4">
                     <div class="card h-100">
-                        <img src="{{ asset('uploads/buildings/' . $building->thumbnail) }}"
+                        <img src="{{ asset('public/uploads/buildings/' . $building->thumbnail) }}"
                              class="card-img-top" alt="{{ $building->name }}"
                              style="height: 200px; object-fit: cover;">
                         <div class="card-body">

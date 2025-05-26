@@ -34,7 +34,7 @@
                                 @php ($i = 1)
                                 @foreach ($members as $member)
                                 <td>{{ $member->priority }}</td>
-                                <td><img src="{{asset('image/team/'.$member->photo)}}" style="height:50px; width:70px;" ></td>
+                                <td><img src="{{asset('public/image/team/'.$member->photo)}}" style="height:50px; width:70px;" ></td>
                                 <td>{{ $member->name }}</td>
                                 <td>{{ $member->designation }}</td>
 

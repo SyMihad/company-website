@@ -6,7 +6,7 @@
 
     <div id="preloader">
         <div class="preloader-content">
-            <img src="{{ asset('frontend/assets/img/NONGOR-LOGO-ENG.png') }}"  alt="Loading..." />
+            <img src="{{ asset('public/frontend/assets/img/NONGOR-LOGO-ENG.png') }}"  alt="Loading..." />
         </div>
     </div>
 
@@ -80,7 +80,7 @@
               {{-- <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
               </svg> --}}
               {{-- <i class="bx bxl-dribbble"></i> --}}
-              <img src="{{ asset('frontend/assets/svg/farm.svg') }}" alt="Icon" />
+              <img src="{{ asset('public/frontend/assets/svg/farm.svg') }}" alt="Icon" />
 
 
             </div>
@@ -95,7 +95,7 @@
               {{-- <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
               </svg>
               <i class="bx bx-file"></i> --}}
-              <img src="{{ asset('frontend/assets/svg/real_estate.svg') }}" alt="Icon" style="width: 100px; height: auto;"/>
+              <img src="{{ asset('public/frontend/assets/svg/real_estate.svg') }}" alt="Icon" style="width: 100px; height: auto;"/>
 
             </div>
             <h4><a href="">{{$service->ctitle2}}</a></h4>
@@ -109,7 +109,7 @@
               {{-- <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
               </svg> --}}
               {{-- <img src="{{ asset('assets/svg/farm.svg') }}" alt="Icon" /> --}}
-              <img src="{{ asset('frontend/assets/svg/shop.svg') }}" alt="Icon" style="width: 100px; height: auto;" />
+              <img src="{{ asset('public/frontend/assets/svg/shop.svg') }}" alt="Icon" style="width: 100px; height: auto;" />
 
 
               <i class="bx bx-tachometer"></i>
@@ -125,7 +125,7 @@
               {{-- <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
               </svg>
               <i class="bx bx-layer"></i> --}}
-              <img  src="{{ asset('frontend/assets/svg/restaurant.svg') }}" alt="Icon" style="width: 100px; height: auto;" />
+              <img  src="{{ asset('public/frontend/assets/svg/restaurant.svg') }}" alt="Icon" style="width: 100px; height: auto;" />
 
             </div>
             <h4><a href="">{{$service->ctitle4}}</a></h4>

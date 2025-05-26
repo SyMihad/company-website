@@ -22,7 +22,7 @@
         <h2 class="mb-4">{{ $building->name }}</h2>
         <p><strong>Address:</strong> {{ $building->address }}</p>
 
-        <iframe src="{{ asset('uploads/buildings/' . $building->pdf_file) }}"
+        <iframe src="{{ asset('public/uploads/buildings/' . $building->pdf_file) }}"
                 width="100%" height="800px"
                 style="border: none;"></iframe>
 

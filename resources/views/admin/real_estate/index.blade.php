@@ -33,13 +33,18 @@
                                 @php ($i = 1)
                                 @foreach ($buildings as $building)
                                 <tr>
-                                    <td><img src="{{asset('uploads/buildings/'.$building->thumbnail)}}" style="height:50px; width:70px;" ></td>
+                                    <td><img src="{{asset('public/uploads/buildings/'.$building->thumbnail)}}" style="height:50px; width:70px;" ></td>
                                     <td>{{ $building->name }}</td>
                                     <td>{{ $building->address }}</td>
                                     <td>
                                         <a href="{{route('real_estate.edit',[$building->id])}}" class="btn btn-info">Edit</a>
                                         {{-- building delete route {{route('building.delete',[$building->id])}} --}}
-                                        <a href="" onclick="return confirm('Are you sure to delete?')" class="btn btn-danger">Delete</a>
+                                        {{-- <a href="" onclick="return confirm('Are you sure to delete?')" class="btn btn-danger">Delete</a> --}}
+                                        <form action="{{ route('real_estate.destroy', $building->id) }}" method="POST" style="display:inline;" onsubmit="return confirm('Are you sure to delete?')">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="btn btn-danger">Delete</button>
+                                        </form>
                                     </td>
                                 </tr>
                                 @endforeach

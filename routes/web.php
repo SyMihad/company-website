@@ -200,6 +200,13 @@ Route::post('/summernote/upload', [App\Http\Controllers\SummernoteController::cl
 
  Route::post('/contact/form', [ContactController::class, 'formcontact'])->name('contact.form');
 
+
+ //storage link
+ Route::get('/create-storage-link', function () {
+    \Artisan::call('storage:link');
+    return 'Storage link created!';
+});
+
  //Coming sooon page
     Route::get('/coming-soon', function () {
         return view('pages/coming_soon');
