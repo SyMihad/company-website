@@ -37,28 +37,41 @@
     <div class="container" data-aos="fade-up">
 
       <div class="section-title">
-        <h2>About Us</strong></h2>
+        <h2></strong></h2>
       </div>
 
       <div class="row content">
         <div class="col-lg-6" data-aos="fade-right">
+          {{-- <img src="{{ asset('public/frontend/assets/img/NONGOR-LOGO-ENG.png') }}" alt="Nongor Logo" style="width: 100%; height: auto;"> --}}
+          {{-- <h2>{{$abouts->title}}</h2> --}}
+          {{-- <h3>{{$abouts->short_dis}}</h3> --}}
         <h2>{{$abouts->title}}</h2>
-          <h3>{{$abouts->short_dis}}</h3>
+          {{-- <h3>{{$abouts->short_dis}}</h3> --}}
         </div>
         <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
-          <p>
+          {{-- <p>
             {!! $abouts->long_dis !!}
-          </p>
-          <ul>
+          </p> --}}
+          {{-- <img src=" {{asset('public/only_logo.png')}} " alt=""> --}}
+          {{-- <ul>
           <li><i class="ri-check-double-line"></i> {{$abouts->l1}}</li>
             <li><i class="ri-check-double-line"></i> {{$abouts->l2}}</li>
             <li><i class="ri-check-double-line"></i>{{$abouts->l3}} </li>
-          </ul>
+          </ul> --}}
           {{-- <p class="font-italic">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
             magna aliqua.
           </p> --}}
         </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <p class="mt-4">
+          <img src=" {{asset('public/only_logo.png')}} " alt="">
+          </p>
+        </div>
+
       </div>
 
     </div>

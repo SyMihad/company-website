@@ -1,7 +1,7 @@
 @extends('layouts.master_home')
 @section('home_content')
 
-<section id="breadcrumbs" class="breadcrumbs">
+{{-- <section id="breadcrumbs" class="breadcrumbs">
   <div class="container">
     <div class="d-flex justify-content-between align-items-center">
       <h2>About Us</h2>
@@ -11,9 +11,14 @@
       </ol>
     </div>
   </div>
-</section>
+</section> --}}
 
-<div class="bg-white py-5">
+
+
+@include('layouts.body.slider')
+
+
+{{-- <div class="bg-white py-5">
   <div class="container text-center">
     <h2 class="fw-bold mb-4">Learn More About Us</h2>
     <div class="row justify-content-center">
@@ -29,7 +34,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> --}}
 
 
 @endsection
