@@ -1,0 +1,26 @@
+@extends('layouts.master_home')
+@section('home_content')
+
+<section id="breadcrumbs" class="breadcrumbs">
+    <div class="container">
+
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>About Us</h2>
+        <ol>
+          <li><a href="{{route('main.home')}}">Home</a></li>
+          <li><a href="{{route('about_us')}}">About Us</a></li>
+          <li><a href="{{route('company.about')}}">Company</a></li>
+        </ol>
+      </div>
+
+    </div>
+</section><!-- End Breadcrumbs -->
+
+<section class="bg-white py-12">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-4 text-center">{{ $abouts->title }}</h2>
+    <p class="text-gray-700 text-lg leading-relaxed">{!! $abouts->long_dis !!}</p>
+  </div>
+</section>
+
+@endsection

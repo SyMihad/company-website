@@ -37,6 +37,16 @@ class AboutUsController extends Controller
         return view('pages.about', compact('members', 'abouts'));
     }
 
+    public function companyAbout() {
+        $abouts = DB::table('home_abouts')->first();
+        return view('pages.company_about', compact('abouts'));
+    }
+
+    public function boardOfDirectors() {
+        $members = TeamMember::orderBy('priority')->get();
+        return view('pages.board_of_directors', compact('members'));
+    }
+
     public function index()
     {
         $members = TeamMember::orderBy('priority')->get();

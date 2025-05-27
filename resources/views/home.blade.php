@@ -84,7 +84,7 @@
 
 
             </div>
-            <h4><a href="">{{$service->ctitle1}}</a></h4>
+            <h4><a href=" {{ route('agro.home') }} ">{{$service->ctitle1}}</a></h4>
             <p>{{$service->cdsc1}}</p>
           </div>
         </div>
@@ -98,7 +98,7 @@
               <img src="{{ asset('public/frontend/assets/svg/real_estate.svg') }}" alt="Icon" style="width: 100px; height: auto;"/>
 
             </div>
-            <h4><a href="">{{$service->ctitle2}}</a></h4>
+            <h4><a href=" {{ route('real-estate') }} ">{{$service->ctitle2}}</a></h4>
             <p>{{$service->cdsc2}}</p>
           </div>
         </div>
@@ -112,9 +112,9 @@
               <img src="{{ asset('public/frontend/assets/svg/shop.svg') }}" alt="Icon" style="width: 100px; height: auto;" />
 
 
-              <i class="bx bx-tachometer"></i>
+              {{-- <i class="bx bx-tachometer"></i> --}}
             </div>
-            <h4><a href="">{{$service->ctitle3}}</a></h4>
+            <h4><a href=" {{ route('coming-soon-clothing') }} ">{{$service->ctitle3}}</a></h4>
             <p>{{$service->cdsc3}}</p>
           </div>
         </div>
@@ -128,7 +128,7 @@
               <img  src="{{ asset('public/frontend/assets/svg/restaurant.svg') }}" alt="Icon" style="width: 100px; height: auto;" />
 
             </div>
-            <h4><a href="">{{$service->ctitle4}}</a></h4>
+            <h4><a href=" {{ route('coming-soon-restaurant') }} ">{{$service->ctitle4}}</a></h4>
             <p>{{$service->cdsc4}}</p>
           </div>
         </div>

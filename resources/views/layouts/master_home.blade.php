@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Nongor Commercial Limited</title>
+  <title>Nongor Group</title>
 
   <meta name="description" content="Nongor Commercial Limited is a dynamic, multi-sector enterprise committed to excellence, innovation, and sustainable growth. With a strong presence across poultry, real estate, construction, and clothing, we are driven by a shared mission: to create value for our customers, communities, and stakeholders through high-quality products and services">
     <meta name="keywords" content="Nongor Group, Nongor Kitchen, agro, Nongor Agro, clothing, restaurant, Ramgonj, Lakshmipur">
@@ -57,8 +57,21 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+    {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> --}}
 
 
+    <style>
+        html, body {
+            height: 100%;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            flex: 1;
+        }
+    </style>
 
 
 </head>
@@ -109,6 +122,8 @@
 
   <!-- Cropper JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.js"></script>
+{{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> --}}
+
 
 
 @stack('scripts')

@@ -187,6 +187,9 @@ Route::get('/contact', [ContactController::class, 'homeindex'])->name('contact')
 
 Route::get('/about_us', [AboutUsController::class, 'home_about_us'])->name('about_us');
 
+Route::get('/company-about', [AboutUsController::class, 'companyAbout'])->name('company.about');
+Route::get('/board-of-directors', [AboutUsController::class, 'boardOfDirectors'])->name('board.directors');
+
 Route::get('/real-estate', [RealEstateController::class, 'home_building_list'])->name('real-estate');
 
 Route::get('/real-estate/building/{id}', [RealEstateController::class, 'show'])->name('real.estate.show');

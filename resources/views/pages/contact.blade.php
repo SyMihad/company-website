@@ -47,7 +47,8 @@
               <div class="col-lg-4 info mt-4 mt-lg-0">
                 <i class="icofont-phone"></i>
                 <h4>Call:</h4>
-                <p>{{$contacts->phone}}</p>
+                {{-- <p>{{$contacts->phone}}</p> --}}
+                <p><a href="tel:+{{$contacts->phone}}">{{$contacts->phone}}</a></p>
               </div>
             </div>
           </div>

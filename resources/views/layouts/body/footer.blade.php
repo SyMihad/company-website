@@ -10,7 +10,7 @@
               House: 355/B <br>
               Road: 5, Block: I<br>
               Bashundhara Residential Area , Dhaka 1229 <br><br>
-              <strong>Phone:</strong> 01911305090 <br>
+              <strong>Phone:</strong> <a href="tel:01911305090">01911305090</a> <br>
               <strong>Email:</strong> groupnongor@gmail.com <br>
             </p>
           </div>
