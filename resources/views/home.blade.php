@@ -65,14 +65,28 @@
         </div>
       </div>
 
-      <div class="row">
+      {{-- <div class="row">
         <div class="col-lg-12 text-center">
           <p class="mt-4">
           <img src=" {{asset('public/only_logo.png')}} " alt="">
           </p>
         </div>
 
-      </div>
+      </div> --}}
+
+      <div class="row">
+        <div class="col-12 text-center">
+            <p class="mt-4">
+                <img
+                    src="{{ asset('public/only_logo.png') }}"
+                    alt="Logo"
+                    class="img-fluid mx-auto d-block"
+                    style="max-width: 100%; height: auto;"
+                >
+            </p>
+        </div>
+    </div>
+
 
     </div>
   </section><!-- End About Us Section -->
