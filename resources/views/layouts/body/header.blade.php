@@ -52,9 +52,9 @@
 
           <li class="drop-down"><a href="">About</a>
             <ul>
-              <li><a href=" {{ route('about_us') }} ">About Us</a></li>
-              <li><a href="{{route('company.about')}}">Company About</a></li>
-              <li><a href="{{ route('board.directors') }}">Board of Directors</a></li>
+              {{-- <li><a href=" {{ route('about_us') }} ">About Us</a></li> --}}
+              <li><a href="{{route('company.about')}}">Our Organisations</a></li>
+              <li><a href="{{ route('board.directors') }}">Board of Directos</a></li>
             </ul>
           </li>
 

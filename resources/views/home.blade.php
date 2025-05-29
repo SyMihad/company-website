@@ -45,7 +45,7 @@
           {{-- <img src="{{ asset('public/frontend/assets/img/NONGOR-LOGO-ENG.png') }}" alt="Nongor Logo" style="width: 100%; height: auto;"> --}}
           {{-- <h2>{{$abouts->title}}</h2> --}}
           {{-- <h3>{{$abouts->short_dis}}</h3> --}}
-        <h2>{{$abouts->title}}</h2>
+        {{-- <h2>{{$abouts->title}}</h2> --}}
           {{-- <h3>{{$abouts->short_dis}}</h3> --}}
         </div>
         <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
@@ -74,22 +74,38 @@
 
       </div> --}}
 
-      <div class="row">
-        <div class="col-12 text-center">
-            <p class="mt-4">
-                <img
-                    src="{{ asset('public/only_logo.png') }}"
-                    alt="Logo"
-                    class="img-fluid mx-auto d-block"
-                    style="max-width: 100%; height: auto;"
-                >
-            </p>
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="mt-4">
+                    <img
+                        src="{{ asset('public/NONGOR LOGO ENG (1) (6).svg') }}"
+                        alt="Logo"
+                        class="img-fluid mx-auto d-block"
+                        style="max-width: 700px; width: 100%; height: auto;"
+                    >
+                </p>
+            </div>
         </div>
-    </div>
+        {{-- <div class="row">
+            <div class="col-12 text-center">
+                <p class="mt-4">
+                    <img
+                        src="{{ asset('public/NONGOR LOGO ENG (1) (3).svg') }}"
+                        alt="Logo"
+                        class="img-fluid mx-auto d-block"
+                        style="max-width: 550px; width: 100%; height: auto;"
+                    >
+                </p>
+            </div>
+        </div> --}}
+
 
 
     </div>
   </section><!-- End About Us Section -->
+
+  {{-- @include('layouts.body.slider') --}}
+
 
   <!-- ======= Services Section ======= -->
   <section id="services" class="services section-bg">

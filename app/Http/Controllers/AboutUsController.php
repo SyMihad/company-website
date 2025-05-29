@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\AboutPage;
 use App\Models\TeamMember;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -38,8 +39,9 @@ class AboutUsController extends Controller
     }
 
     public function companyAbout() {
-        $abouts = DB::table('home_abouts')->first();
-        return view('pages.company_about', compact('abouts'));
+        // $abouts = DB::table('home_abouts')->first();
+        $about = AboutPage::latest()->first();
+        return view('pages.company_about', compact('about'));
     }
 
     public function boardOfDirectors() {

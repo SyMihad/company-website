@@ -5,6 +5,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BrandController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\AboutPageController;
 use App\Http\Controllers\AboutUsController;
 use App\Http\Controllers\AgroController;
 use App\Http\Controllers\MultiimageController;
@@ -130,6 +131,12 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
 
     Route::get('/agro-admin', [AgroController::class, 'index'])->name('agro.index');
     Route::post('/agro/update/{id}', [AgroController::class, 'update'])->name('agro.update');
+
+
+     //About Page
+
+    Route::get('/about-page', [AboutPageController::class, 'index'])->name('aboutPage.index');
+    Route::post('/about-page/update/{id}', [AboutPageController::class, 'update'])->name('aboutPage.update');
 
 
 

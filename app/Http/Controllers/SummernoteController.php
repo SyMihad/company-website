@@ -18,4 +18,5 @@ class SummernoteController extends Controller
         }
         return response()->json(['error' => 'No image uploaded.'], 400);
     }
+
 }
