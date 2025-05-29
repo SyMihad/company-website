@@ -217,6 +217,11 @@ Route::post('/summernote/upload', [App\Http\Controllers\SummernoteController::cl
     return 'Storage link created!';
 });
 
+Route::get('/run-migrations', function () {
+    \Artisan::call('migrate', ['--force' => true]);
+    return 'Migrations have been run successfully!';
+});
+
  //Coming sooon page
     Route::get('/coming-soon-clothing', function () {
         return view('pages/coming_soon_clothing');
