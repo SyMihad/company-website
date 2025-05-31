@@ -179,6 +179,20 @@
 
                 </div>
               </ul>
+
+              <ul  class="collapse show"  id="aboutPage"
+                data-parent="#sidebar-menu">
+                <div class="sub-menu">
+
+                    <li  class="active" >
+                    <a class="sidenav-item-link" href="{{route('evaluation.index')}}">
+                        <span class="nav-text">Evaluation</span>
+
+                    </a>
+                    </li>
+
+                </div>
+              </ul>
             </li>
 
             {{-- Services --}}

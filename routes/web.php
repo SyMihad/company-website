@@ -13,6 +13,7 @@ use App\Models\Multipic;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ChangePassController;
+use App\Http\Controllers\EvaluationController;
 use App\Http\Controllers\RealEstateController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\SocialController;
@@ -133,10 +134,15 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
     Route::post('/agro/update/{id}', [AgroController::class, 'update'])->name('agro.update');
 
 
-     //About Page
+    //About Page
 
     Route::get('/about-page', [AboutPageController::class, 'index'])->name('aboutPage.index');
     Route::post('/about-page/update/{id}', [AboutPageController::class, 'update'])->name('aboutPage.update');
+
+     //Evaluation Page
+
+    Route::get('/evaluation-page', [EvaluationController::class, 'index'])->name('evaluation.index');
+    Route::post('/evaluation-page/update/{id}', [EvaluationController::class, 'update'])->name('evaluation.update');
 
 
 
@@ -202,6 +208,8 @@ Route::get('/real-estate', [RealEstateController::class, 'home_building_list'])-
 Route::get('/real-estate/building/{id}', [RealEstateController::class, 'show'])->name('real.estate.show');
 
 Route::get('/agro', [AgroController::class, 'homeagro'])->name('agro.home');
+
+Route::get('/evaluation', [EvaluationController::class, 'homeEvaluation'])->name('evaluation.home');
 
 Route::post('/summernote/upload', [App\Http\Controllers\SummernoteController::class, 'upload'])->name('summernote.upload');
 
