@@ -141,8 +141,8 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
 
      //Evaluation Page
 
-    Route::get('/evaluation-page', [EvaluationController::class, 'index'])->name('evaluation.index');
-    Route::post('/evaluation-page/update/{id}', [EvaluationController::class, 'update'])->name('evaluation.update');
+    Route::get('/evolution-page', [EvaluationController::class, 'index'])->name('evaluation.index');
+    Route::post('/evolution-page/update/{id}', [EvaluationController::class, 'update'])->name('evaluation.update');
 
 
 
@@ -209,7 +209,7 @@ Route::get('/real-estate/building/{id}', [RealEstateController::class, 'show'])-
 
 Route::get('/agro', [AgroController::class, 'homeagro'])->name('agro.home');
 
-Route::get('/evaluation', [EvaluationController::class, 'homeEvaluation'])->name('evaluation.home');
+Route::get('/evolution', [EvaluationController::class, 'homeEvaluation'])->name('evaluation.home');
 
 Route::post('/summernote/upload', [App\Http\Controllers\SummernoteController::class, 'upload'])->name('summernote.upload');
 

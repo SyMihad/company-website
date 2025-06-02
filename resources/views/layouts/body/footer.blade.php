@@ -9,11 +9,19 @@
             <p>
               House: 355/B <br>
               Road: 5, Block: I<br>
-              Bashundhara Residential Area , Dhaka 1229 <br><br>
+              Bashundhara Residential Area , Dhaka 1229 <br>
+                Farm : Fakirpur, Horishchor, Dargah Sharif, Ward 5, 5 no. Chandipur Union, Ramganj, Laxmipur.
+
+              <br><br>
               <strong>Phone:</strong> <a href="tel:01911305090">01911305090</a> <br>
               <strong>Email:</strong> groupnongor@gmail.com <br>
             </p>
+            {{-- <p>
+                Farm : Fakirpur, Horishchor, Dargah Sharif, Ward 5, 5 no. Chandipur Union, Ramganj, Laxmipur.
+            </p> --}}
           </div>
+
+
 
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
@@ -45,6 +53,17 @@
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
           </div>
+
+          {{-- <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Company</h3>
+            <p>
+              House: 355/B <br>
+              Road: 5, Block: I<br>
+              Bashundhara Residential Area , Dhaka 1229 <br><br>
+              <strong>Phone:</strong> <a href="tel:01911305090">01911305090</a> <br>
+              <strong>Email:</strong> groupnongor@gmail.com <br>
+            </p>
+          </div> --}}
 
         </div>
       </div>

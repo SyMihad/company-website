@@ -9,7 +9,7 @@
         <ol>
           <li><a href="{{route('main.home')}}">Home</a></li>
           <li><a href="">About Us</a></li>
-          <li><a href="{{route('evaluation.home')}}">Evaluation</a></li>
+          <li><a href="{{route('evaluation.home')}}">Evolution</a></li>
         </ol>
       </div>
 
