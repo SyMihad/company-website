@@ -23,7 +23,7 @@
 <div class="bg-white py-10">
     <div class="container">
         @php
-            $chairman = $members->where('designation', 'Board Chairman')->first();
+            $chairman = $members->where('designation', 'Group Chairman')->first();
             $md = $members->where('designation', 'Managing Director')->first();
             $directors = $members->where('designation', 'Director')->sortBy('priority');
             // dd($chairman, $md, $directors);
